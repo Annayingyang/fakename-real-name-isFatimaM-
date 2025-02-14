@@ -4,27 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Effect</title>
+    <link rel="stylesheet" href="index.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #f4f4f4;
+            text-align: center;
         }
         h1 {
             font-size: 2rem;
             font-weight: bold;
             color: #333;
         }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: #333;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .btn {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1 id="typing"></h1>
+    <button class="btn" onclick="location.href='Fatimafacts.html'">Fatima Facts</button>
     
     <script>
-        const text = "FatimaM-Encyclopaedia :)";
+        const text = "FatimaM-Encyclopaedia";
         let index = 0;
         function typeEffect() {
             if (index < text.length) {
