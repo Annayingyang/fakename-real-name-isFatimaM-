@@ -15,11 +15,13 @@
             height: 100vh;
             background-color: #f4f4f4;
             text-align: center;
+            margin: 0; 
         }
         h1 {
             font-size: 2rem;
             font-weight: bold;
             color: #333;
+            margin: 0; 
         }
         .btn {
             margin-top: 20px;
@@ -44,9 +46,18 @@
                 padding: 8px 16px;
             }
         }
+        
+        .image-container img {
+            max-width: 100px; 
+            margin: 0; 
+            padding: 0; 
+        }
     </style>
 </head>
 <body>
+    <div class="image-container">
+        <img src="mocking.png" alt="Image description">
+    </div>
     <h1 id="typing"></h1>
     <button class="btn" onclick="location.href='Fatimafacts.html'">Fatima Facts</button>
     
